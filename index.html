@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ROG Strix G17 (2023) - Gaming Laptop with AMD Ryzen 9 7945HX and NVIDIA RTX 4070">
+    <meta name="keywords" content="ROG, Strix G17, Gaming Laptop, RTX 4070, Ryzen 9, 240Hz">
+    <title>ROG Strix G17 (2023) | Gaming Laptops | ROG - Republic of Gamers</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <img src="images/logo/rog-logo-red.png" alt="ROG" class="loader-logo">
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Loading Experience...</p>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Scroll Progress -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <img src="images/logo/rog-logo-white.png" alt="ROG" class="nav-logo">
+            </a>
+            
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#products" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="#performance" class="nav-link">Performance</a></li>
+                <li class="nav-item"><a href="#cooling" class="nav-link">Cooling</a></li>
+                <li class="nav-item"><a href="#display" class="nav-link">Display</a></li>
+                <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#support" class="nav-link">Support</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="btn btn-outline">Where to Buy</button>
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <canvas class="hero-canvas" id="heroCanvas"></canvas>
+        <div class="hero-particles" id="heroParticles"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-text">New 2023 Model</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line" data-text="ROG Strix G17">ROG Strix G17</span>
+                <span class="title-line accent">Raise Your Game</span>
+            </h1>
+            
+            <p class="hero-subtitle">Call the Shots with AMD Ryzen™ 9 7945HX & NVIDIA® GeForce RTX™ 4070</p>
+            
+            <div class="hero-cta">
+                <a href="#buy" class="btn btn-large btn-primary">
+                    <span>Buy Now</span>
+                    <svg class="btn-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                </a>
+                <a href="#watch" class="btn btn-large btn-video">
+                    <svg class="btn-icon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    <span>Watch Trailer</span>
+                </a>
+            </div>
+
+            <div class="hero-laptop-container">
+                <div class="laptop-shadow"></div>
+                <img src="images/products/hero-laptop.png" alt="ROG Strix G17 2023" class="hero-laptop" id="heroLaptop">
+                <div class="laptop-glow"></div>
+            </div>
+            
+            <div class="hero-specs">
+                <div class="spec-item" data-aos="fade-up" data-aos-delay="0">
+                    <div class="spec-icon">
+                        <img src="images/icons/icon-cpu.svg" alt="CPU">
+                    </div>
+                    <div class="spec-content">
+                        <span class="spec-label">Processor</span>
+                        <span class="spec-value">Ryzen 9 7945HX</span>
+                    </div>
+                </div>
+                <div class="spec-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="spec-icon">
+                        <img src="images/icons/icon-gpu.svg" alt="GPU">
+                    </div>
+                    <div class="spec-content">
+                        <span class="spec-label">Graphics</span>
+                        <span class="spec-value">RTX 4070</span>
+                    </div>
+                </div>
+                <div class="spec-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="spec-icon">
+                        <img src="images/icons/icon-display.svg" alt="Display">
+                    </div>
+                    <div class="spec-content">
+                        <span class="spec-label">Display</span>
+                        <span class="spec-value">QHD 240Hz</span>
+                    </div>
+                </div>
+                <div class="spec-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="spec-icon">
+                        <img src="images/icons/icon-memory.svg" alt="Memory">
+                    </div>
+                    <div class="spec-content">
+                        <span class="spec-label">Memory</span>
+                        <span class="spec-value">32GB DDR5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Specs Bar -->
+    <div class="specs-bar">
+        <div class="specs-container">
+            <div class="spec-block">
+                <span class="spec-name">OS</span>
+                <span class="spec-detail windows">Windows 11 Pro</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-block">
+                <span class="spec-name">CPU</span>
+                <span class="spec-detail amd">AMD Ryzen™ 9 7945HX</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-block">
+                <span class="spec-name">GPU</span>
+                <span class="spec-detail nvidia">NVIDIA® GeForce RTX™ 4070</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-block">
+                <span class="spec-name">TGP</span>
+                <span class="spec-detail">140W Max</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-block">
+                <span class="spec-name">Memory</span>
+                <span class="spec-detail">Up to 32GB DDR5-4800</span>
+            </div>
+            <div class="spec-divider"></div>
+            <div class="spec-block">
+                <span class="spec-name">Storage</span>
+                <span class="spec-detail">PCIe® Gen4x4 SSD</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Performance Section -->
+    <section class="section performance" id="performance">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Performance</span>
+                <h2 class="section-title">Esports Domination</h2>
+                <p class="section-desc">The latest AMD Ryzen™ 9 7945HX CPU, paired with up to an NVIDIA® GeForce RTX™ 4070 Laptop GPU with a max TGP of 140W, as well as a MUX Switch with NVIDIA Advanced Optimus support the backbone of the 2023 Strix G17.</p>
+            </header>
+
+            <div class="performance-grid">
+                <article class="perf-card">
+                    <div class="perf-visual">
+                        <img src="images/performance/cpu-ryzen.png" alt="AMD Ryzen 9">
+                        <div class="perf-glow"></div>
+                    </div>
+                    <div class="perf-content">
+                        <h3 class="perf-title">Ryzen to the Challenge</h3>
+                        <p class="perf-text">Leverage the power of Ryzen™ with the AMD Ryzen™ 9 7945HX CPU. This flagship processor has incredible single-threaded performance with 16 cores and 32 threads for smooth gaming and streaming.</p>
+                        <ul class="perf-specs">
+                            <li>16 Cores / 32 Threads</li>
+                            <li>Up to 5.4 GHz Boost</li>
+                            <li>55W TDP</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="perf-card">
+                    <div class="perf-visual">
+                        <img src="images/performance/ddr5-memory.png" alt="DDR5 Memory">
+                        <div class="perf-glow"></div>
+                    </div>
+                    <div class="perf-content">
+                        <h3 class="perf-title">The Next Generation</h3>
+                        <p class="perf-text">DDR5 memory technology has a 50% higher data rate than DDR4, with the Strix G17 sporting 4800MHz DDR5 RAM — speeds that put most DDR4 laptops to shame.</p>
+                        <ul class="perf-specs">
+                            <li>4800MHz Speed</li>
+                            <li>Up to 32GB Capacity</li>
+                            <li>Dual Channel</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="perf-card">
+                    <div class="perf-visual">
+                        <img src="images/performance/pcie-ssd.png" alt="PCIe SSD">
+                        <div class="perf-glow"></div>
+                    </div>
+                    <div class="perf-content">
+                        <h3 class="perf-title">Eliminate Loading Times</h3>
+                        <p class="perf-text">With PCIe Gen4x4, you'll get into the game faster than ever before. Whether loading a new mission or installing the latest game, PCIe Gen4 has more than enough bandwidth.</p>
+                        <ul class="perf-specs">
+                            <li>Up to 7000 MB/s</li>
+                            <li>Dual M.2 Slots</li>
+                            <li>RAID 0 Support</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RTX Section -->
+    <section class="section rtx-section" id="rtx">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label green">Graphics</span>
+                <h2 class="section-title">GeForce RTX 40 Series Laptops</h2>
+                <p class="section-desc">Beyond Fast for Gamers and Creators</p>
+            </header>
+
+            <div class="rtx-showcase">
+                <div class="rtx-visual">
+                    <img src="images/products/laptop-gaming.png" alt="Gaming Performance" class="rtx-laptop">
+                    <div class="rtx-badges">
+                        <div class="rtx-badge">DLSS 3</div>
+                        <div class="rtx-badge">Ray Tracing</div>
+                        <div class="rtx-badge">Max-Q</div>
+                    </div>
+                </div>
+
+                <div class="rtx-features">
+                    <div class="rtx-card">
+                        <div class="rtx-icon">
+                            <img src="images/icons/icon-ai.svg" alt="AI">
+                        </div>
+                        <h4>AI-Powered Performance</h4>
+                        <p>Get a quantum leap in performance in games and creative apps with AI-powered DLSS 3 and enable lifelike virtual worlds with full ray tracing.</p>
+                    </div>
+                    <div class="rtx-card">
+                        <div class="rtx-icon">
+                            <img src="images/icons/icon-creative.svg" alt="Creative">
+                        </div>
+                        <h4>Accelerate Your Ideas</h4>
+                        <p>NVIDIA Studio takes your creative projects to the next level. Unlock RTX and AI acceleration in top creative apps.</p>
+                    </div>
+                    <div class="rtx-card">
+                        <div class="rtx-icon">
+                            <img src="images/icons/icon-battery.svg" alt="Battery">
+                        </div>
+                        <h4>Optimized Power</h4>
+                        <p>NVIDIA Max-Q is an advanced suite of AI-powered technologies that optimize your system for peak efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooling Section -->
+    <section class="section cooling" id="cooling">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Thermal</span>
+                <h2 class="section-title">ROG Intelligent Cooling</h2>
+                <p class="section-desc">Conductonaut Extreme liquid metal thermal compound on the CPU keeps the Strix G17 boosting the processor higher, for longer.</p>
+            </header>
+
+            <div class="cooling-showcase">
+                <div class="cooling-visual">
+                    <div class="cooling-main-image">
+                        <img src="images/cooling/cooling-system.png" alt="Cooling System" id="coolingImage">
+                        <div class="hotspot" data-info="Arc Flow Fans" style="top: 30%; left: 20%;"></div>
+                        <div class="hotspot" data-info="Liquid Metal" style="top: 45%; left: 50%;"></div>
+                        <div class="hotspot" data-info="Vapor Chamber" style="top: 60%; left: 30%;"></div>
+                        <div class="hotspot" data-info="0.1mm Fins" style="top: 70%; left: 70%;"></div>
+                    </div>
+                    <div class="cooling-temps">
+                        <div class="temp-item">
+                            <span class="temp-label">CPU Temp</span>
+                            <span class="temp-value" id="cpuTemp">45°C</span>
+                        </div>
+                        <div class="temp-item">
+                            <span class="temp-label">GPU Temp</span>
+                            <span class="temp-value" id="gpuTemp">42°C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cooling-features">
+                    <div class="cooling-feature active" data-image="liquid-metal">
+                        <div class="feature-number">01</div>
+                        <div class="feature-content">
+                            <h4>Liquid Metal Technology</h4>
+                            <p>Thermal Grizzly's Conductonaut Extreme offers 17X higher conductivity and CPU temperature reductions of up to 15°C.</p>
+                        </div>
+                    </div>
+                    <div class="cooling-feature" data-image="arc-flow">
+                        <div class="feature-number">02</div>
+                        <div class="feature-content">
+                            <h4>Arc Flow Fans™</h4>
+                            <p>84 curved blades maximize airflow with minimal noise. Variable thickness blades reduce turbulence.</p>
+                        </div>
+                    </div>
+                    <div class="cooling-feature" data-image="fins">
+                        <div class="feature-number">03</div>
+                        <div class="feature-content">
+                            <h4>0.1mm Ultra-thin Fins</h4>
+                            <p>247 heatsink fins totaling 93,354mm² of surface area guide airflow in multiple directions.</p>
+                        </div>
+                    </div>
+                    <div class="cooling-feature" data-image="3d-flow">
+                        <div class="feature-number">04</div>
+                        <div class="feature-content">
+                            <h4>3D Flow Zone</h4>
+                            <p>Heavily ventilated intake area with trapezoidal cut ensures unobstructed airflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Display Section -->
+    <section class="section display" id="display">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Visuals</span>
+                <h2 class="section-title">Competition Hertz</h2>
+                <p class="section-desc">As a purpose-built gaming machine, the Strix G17 sports up to QHD 240Hz and FHD 144Hz panel options along with NVIDIA® G-SYNC support.</p>
+            </header>
+
+            <div class="display-showcase">
+                <div class="display-visual">
+                    <div class="display-screen">
+                        <img src="images/display/display-panel.png" alt="Display Panel">
+                        <div class="refresh-badge">240Hz</div>
+                    </div>
+                    <div class="display-tech">
+                        <span class="tech-tag">G-SYNC</span>
+                        <span class="tech-tag">Dolby Vision</span>
+                        <span class="tech-tag">3ms Response</span>
+                    </div>
+                </div>
+
+                <div class="display-options">
+                    <div class="display-card featured">
+                        <div class="card-header">
+                            <span class="card-label">QHD</span>
+                            <span class="card-badge">Recommended</span>
+                        </div>
+                        <div class="card-hz">
+                            <span class="hz-number" data-target="240">0</span>
+                            <span class="hz-unit">Hz</span>
+                        </div>
+                        <div class="card-detail">3ms Response Time</div>
+                        <ul class="card-features">
+                            <li>2560 x 1440 Resolution</li>
+                            <li>NVIDIA G-SYNC</li>
+                            <li>Dolby Vision HDR</li>
+                            <li>100% DCI-P3</li>
+                        </ul>
+                    </div>
+
+                    <div class="display-card">
+                        <div class="card-header">
+                            <span class="card-label">FHD</span>
+                        </div>
+                        <div class="card-hz">
+                            <span class="hz-number" data-target="144">0</span>
+                            <span class="hz-unit">Hz</span>
+                        </div>
+                        <div class="card-detail">Competitive Gaming</div>
+                        <ul class="card-features">
+                            <li>1920 x 1080 Resolution</li>
+                            <li>Adaptive Sync</li>
+                            <li>sRGB 100%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audio Section -->
+    <section class="section audio" id="audio">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Audio</span>
+                <h2 class="section-title">Crystal Clear Communication</h2>
+                <p class="section-desc">Smart AMP speakers paired with Dolby Atmos enhance spatial immersion with more nuanced, layered sound effects.</p>
+            </header>
+
+            <div class="audio-visualizer-container">
+                <canvas id="audioVisualizer"></canvas>
+            </div>
+
+            <div class="audio-grid">
+                <article class="audio-card">
+                    <div class="audio-icon-wrapper">
+                        <img src="images/icons/icon-speaker.svg" alt="Speakers">
+                    </div>
+                    <h3>Smart AMP Speakers</h3>
+                    <p>Smart AMP speakers paired with Dolby Atmos enhance spatial immersion with more nuanced, layered sound effects.</p>
+                    <div class="audio-spec">2x 2W Speakers</div>
+                </article>
+
+                <article class="audio-card">
+                    <div class="audio-icon-wrapper">
+                        <img src="images/icons/icon-dolby.svg" alt="Dolby">
+                    </div>
+                    <h3>Dolby Atmos</h3>
+                    <p>Virtual 5.1.2-channel surround sound powered by Dolby Atmos enhances spatial immersion with specially tuned preset modes.</p>
+                    <div class="audio-spec">5.1.2 Channel Virtual</div>
+                </article>
+
+                <article class="audio-card">
+                    <div class="audio-icon-wrapper">
+                        <img src="images/icons/icon-mic.svg" alt="AI Noise Cancelation">
+                    </div>
+                    <h3>AI Noise Cancelation</h3>
+                    <p>Two-Way AI Noise Cancelation technology removes noise from both your mic input and incoming feeds.</p>
+                    <div class="audio-spec">Machine Learning Powered</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keyboard Section -->
+    <section class="section keyboard" id="keyboard">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Input</span>
+                <h2 class="section-title">Strike with Precision</h2>
+                <p class="section-desc">Overstroke technology offers sublime work and play on the Strix G17, reducing key actuation and improving responsiveness.</p>
+            </header>
+
+            <div class="keyboard-showcase">
+                <div class="keyboard-visual">
+                    <img src="images/keyboard/keyboard-rgb.png" alt="RGB Keyboard" class="keyboard-image">
+                    <div class="rgb-controller">
+                        <h4>Aura Sync RGB</h4>
+                        <div class="color-presets">
+                            <button class="color-btn" data-color="#ff0000" style="background: #ff0000;"></button>
+                            <button class="color-btn" data-color="#00ff00" style="background: #00ff00;"></button>
+                            <button class="color-btn" data-color="#0000ff" style="background: #0000ff;"></button>
+                            <button class="color-btn" data-color="#ff00ff" style="background: #ff00ff;"></button>
+                            <button class="color-btn" data-color="#ffff00" style="background: #ffff00;"></button>
+                            <button class="color-btn" data-color="#00ffff" style="background: #00ffff;"></button>
+                        </div>
+                        <div class="effect-modes">
+                            <button class="effect-btn active">Static</button>
+                            <button class="effect-btn">Breathing</button>
+                            <button class="effect-btn">Rainbow</button>
+                            <button class="effect-btn">Strobing</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="keyboard-features">
+                    <div class="kb-feature">
+                        <div class="feature-icon">
+                            <img src="images/icons/icon-layout.svg" alt="Layout">
+                        </div>
+                        <div class="feature-content">
+                            <h4>Desktop-Inspired Layout</h4>
+                            <p>Function keys spaced for fewer misses, extended spacebar reshaped for greater comfort and accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="kb-feature">
+                        <div class="feature-icon">
+                            <img src="images/icons/icon-hotkey.svg" alt="Hotkeys">
+                        </div>
+                        <div class="feature-content">
+                            <h4>Dedicated Hotkeys</h4>
+                            <p>Four customizable hotkeys for quick access to volume, mic mute, operating modes, and Armoury Crate.</p>
+                        </div>
+                    </div>
+                    <div class="kb-feature">
+                        <div class="feature-icon">
+                            <img src="images/icons/icon-response.svg" alt="Response">
+                        </div>
+                        <div class="feature-content">
+                            <h4>Overstroke Technology</h4>
+                            <p>Registers keypresses earlier in the stroke, enabling faster, effortless inputs with greater accuracy.</p>
+                        </div>
+                    </div>
+                    <div class="kb-feature highlight">
+                        <div class="feature-icon">
+                            <img src="images/icons/icon-rgb.svg" alt="RGB">
+                        </div>
+                        <div class="feature-content">
+                            <h4>Per-Key RGB</h4>
+                            <p>Choose from millions of colors on every key for endless customization with Aura Sync support.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Battery & Connectivity Section -->
+    <section class="section battery-section" id="battery">
+        <div class="container">
+            <div class="battery-grid">
+                <div class="battery-card">
+                    <div class="battery-visual">
+                        <img src="images/icons/icon-battery-large.svg" alt="Battery">
+                        <div class="charge-indicator">
+                            <div class="charge-fill"></div>
+                        </div>
+                    </div>
+                    <div class="battery-content">
+                        <h3>Stay in Charge</h3>
+                        <p>High capacity 90Wh battery for all-day productivity. Fast charging support gets you to 50% in just 30 minutes.</p>
+                        <div class="battery-stats">
+                            <div class="stat">
+                                <span class="stat-number">90</span>
+                                <span class="stat-unit">Wh</span>
+                                <span class="stat-label">Capacity</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">30</span>
+                                <span class="stat-unit">min</span>
+                                <span class="stat-label">To 50%</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100</span>
+                                <span class="stat-unit">W</span>
+                                <span class="stat-label">USB-C PD</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="battery-card wifi-card">
+                    <div class="wifi-visual">
+                        <div class="wifi-waves">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <img src="images/icons/icon-wifi6e.svg" alt="WiFi 6E">
+                    </div>
+                    <div class="battery-content">
+                        <h3>Lag-Free Gaming</h3>
+                        <p>Wi-Fi 6E (802.11ax) delivers gigabit speeds with lower latency for competitive gaming without wires.</p>
+                        <div class="wifi-features">
+                            <div class="wifi-feature">
+                                <span class="wifi-check">✓</span>
+                                <span>6GHz Band Support</span>
+                            </div>
+                            <div class="wifi-feature">
+                                <span class="wifi-check">✓</span>
+                                <span>Lower Latency</span>
+                            </div>
+                            <div class="wifi-feature">
+                                <span class="wifi-check">✓</span>
+                                <span>Better Efficiency</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connectivity Section -->
+    <section class="section connectivity" id="connectivity">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">I/O</span>
+                <h2 class="section-title">Comprehensive Connectivity</h2>
+                <p class="section-desc">Power up your setup with a versatile selection of I/O ports. Dual USB 3.2 Type-C™ ports with DisplayPort™ 1.4 support.</p>
+            </header>
+
+            <div class="connectivity-showcase">
+                <div class="ports-diagram">
+                    <img src="images/products/ports-layout.png" alt="Ports Layout" class="ports-image">
+                    <div class="port-labels">
+                        <div class="port-label" style="top: 20%; left: 10%;">
+                            <span class="label-number">1</span>
+                            <span class="label-text">USB-C DP 1.4</span>
+                        </div>
+                        <div class="port-label" style="top: 20%; left: 30%;">
+                            <span class="label-number">2</span>
+                            <span class="label-text">USB-C PD + DP</span>
+                        </div>
+                        <div class="port-label" style="top: 20%; left: 50%;">
+                            <span class="label-number">3</span>
+                            <span class="label-text">HDMI 2.1</span>
+                        </div>
+                        <div class="port-label" style="top: 20%; left: 70%;">
+                            <span class="label-number">4</span>
+                            <span class="label-text">RJ45 Ethernet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ports-grid">
+                    <div class="port-card">
+                        <div class="port-icon">
+                            <img src="images/icons/icon-usb-c.svg" alt="USB-C">
+                        </div>
+                        <h4>USB 3.2 Gen2 Type-C</h4>
+                        <p>DisplayPort 1.4 support for external monitors</p>
+                    </div>
+                    <div class="port-card">
+                        <div class="port-icon">
+                            <img src="images/icons/icon-usb-c-pd.svg" alt="USB-C PD">
+                        </div>
+                        <h4>USB-C with Power Delivery</h4>
+                        <p>Charge and display with a single cable</p>
+                    </div>
+                    <div class="port-card">
+                        <div class="port-icon">
+                            <img src="images/icons/icon-hdmi.svg" alt="HDMI">
+                        </div>
+                        <h4>HDMI 2.1 FRL</h4>
+                        <p>8K@60Hz or 4K@120Hz output</p>
+                    </div>
+                    <div class="port-card">
+                        <div class="port-icon">
+                            <img src="images/icons/icon-ethernet.svg" alt="Ethernet">
+                        </div>
+                        <h4>2.5G Ethernet</h4>
+                        <p>Ultra-fast wired connectivity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Section -->
+    <section class="section software" id="software">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Software</span>
+                <h2 class="section-title">Armoury Crate</h2>
+                <p class="section-desc">ROG Armoury Crate unifies system and lighting controls to put essential settings at your fingertips in a single utility.</p>
+            </header>
+
+            <div class="software-showcase">
+                <div class="software-interface">
+                    <img src="images/software/armoury-crate.png" alt="Armoury Crate Interface" class="software-screenshot">
+                    <div class="interface-features">
+                        <div class="int-feature" style="top: 20%; left: 10%;">
+                            <span>System Monitor</span>
+                        </div>
+                        <div class="int-feature" style="top: 40%; right: 10%;">
+                            <span>Scenario Profiles</span>
+                        </div>
+                        <div class="int-feature" style="bottom: 30%; left: 15%;">
+                            <span>Aura Sync</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="software-features-grid">
+                    <div class="software-feature-card">
+                        <img src="images/software/scenario-profiles.png" alt="Scenario Profiles">
+                        <h4>Scenario Profiles</h4>
+                        <p>Automatic switching between Silent, Performance, and Turbo modes based on the application you're running.</p>
+                    </div>
+                    <div class="software-feature-card">
+                        <img src="images/software/gamevisual.png" alt="GameVisual">
+                        <h4>GameVisual</h4>
+                        <p>Six expertly tuned graphic modes designed to optimize your visual experience for specific game genres.</p>
+                    </div>
+                    <div class="software-feature-card">
+                        <img src="images/software/aura-creator.png" alt="Aura Creator">
+                        <h4>Aura Creator</h4>
+                        <p>Customize the RGB lighting on Aura-compatible peripherals to suit your gaming style.</p>
+                    </div>
+                    <div class="software-feature-card">
+                        <img src="images/software/aura-sync.png" alt="Aura Sync">
+                        <h4>Aura Sync</h4>
+                        <p>Match colors and effects across multiple devices for a unified gaming setup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+    <section class="section design" id="design">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Design</span>
+                <h2 class="section-title">Under the Radar</h2>
+                <p class="section-desc">The Eclipse Gray colorway keeps your laptop's true potential under wraps, letting this gaming machine blend in with the crowd.</p>
+            </header>
+
+            <div class="design-gallery">
+                <div class="design-main">
+                    <img src="images/design/eclipse-gray-main.png" alt="Eclipse Gray Design" id="designMainImage">
+                    <div class="design-overlay">
+                        <h3>Eclipse Gray</h3>
+                        <p>Sporty Armor Caps add personality with subtle cut-outs and icons</p>
+                    </div>
+                </div>
+                <div class="design-thumbs">
+                    <div class="thumb active" data-image="eclipse-gray-main.png">
+                        <img src="images/design/eclipse-gray-thumb.png" alt="Eclipse Gray">
+                    </div>
+                    <div class="thumb" data-image="armor-cap.png">
+                        <img src="images/design/armor-cap-thumb.png" alt="Armor Cap">
+                    </div>
+                    <div class="thumb" data-image="chassis.png">
+                        <img src="images/design/chassis-thumb.png" alt="Chassis">
+                    </div>
+                    <div class="thumb" data-image="lightbar.png">
+                        <img src="images/design/lightbar-thumb.png" alt="Lightbar">
+                    </div>
+                </div>
+            </div>
+
+            <div class="design-features">
+                <div class="design-feature">
+                    <div class="feature-image">
+                        <img src="images/design/metal-chassis.png" alt="Metal Chassis">
+                    </div>
+                    <h4>Milled Aluminum Chassis</h4>
+                    <p>Robust construction that's ready to go anywhere</p>
+                </div>
+                <div class="design-feature">
+                    <div class="feature-image">
+                        <img src="images/design/rgb-lightbar.png" alt="RGB Lightbar">
+                    </div>
+                    <h4>Customizable Lightbar</h4>
+                    <p>Aura Sync compatible RGB lightbar adds a subtle glow</p>
+                </div>
+                <div class="design-feature">
+                    <div class="feature-image">
+                        <img src="images/design/hinge-design.png" alt="Hinge">
+                    </div>
+                    <h4>ErgoLift Hinge</h4>
+                    <p>Improved typing angle and enhanced cooling airflow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="section comparison" id="comparison">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Compare</span>
+                <h2 class="section-title">Choose Your Configuration</h2>
+                <p class="section-desc">Select the perfect Strix G17 configuration for your gaming needs.</p>
+            </header>
+
+            <div class="comparison-table-wrapper">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Features</th>
+                            <th class="highlight">ROG Strix G17 (2023)</th>
+                            <th>Standard Gaming Laptop</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Processor</td>
+                            <td class="highlight"><span class="check">✓</span> AMD Ryzen 9 7945HX (16-core)</td>
+                            <td>Up to 8-core</td>
+                        </tr>
+                        <tr>
+                            <td>GPU Max TGP</td>
+                            <td class="highlight"><span class="check">✓</span> 140W RTX 4070</td>
+                            <td>~100W</td>
+                        </tr>
+                        <tr>
+                            <td>Display Refresh</td>
+                            <td class="highlight"><span class="check">✓</span> Up to 240Hz QHD</td>
+                            <td>144Hz FHD</td>
+                        </tr>
+                        <tr>
+                            <td>Thermal Compound</td>
+                            <td class="highlight"><span class="check">✓</span> Liquid Metal</td>
+                            <td>Standard Paste</td>
+                        </tr>
+                        <tr>
+                            <td>Memory Speed</td>
+                            <td class="highlight"><span class="check">✓</span> DDR5-4800</td>
+                            <td>DDR4-3200</td>
+                        </tr>
+                        <tr>
+                            <td>Cooling System</td>
+                            <td class="highlight"><span class="check">✓</span> Arc Flow Fans + Vapor Chamber</td>
+                            <td>Standard Fans</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <header class="section-header">
+                <span class="section-label">Reviews</span>
+                <h2 class="section-title">What Gamers Say</h2>
+                <p class="section-desc">Trusted by professional gamers and content creators worldwide.</p>
+            </header>
+
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The Strix G17 is an absolute beast. The 240Hz display and RTX 4070 combo delivers buttery smooth gameplay in every title I've thrown at it."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/avatar1.jpg" alt="John Doe" class="author-avatar">
+                        <div class="author-info">
+                            <h5>John Doe</h5>
+                            <span>Professional Gamer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"The cooling system is incredible. Even during intense rendering sessions, the laptop stays cool and quiet. The liquid metal really makes a difference."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/avatar2.jpg" alt="Sarah Miller" class="author-avatar">
+                        <div class="author-info">
+                            <h5>Sarah Miller</h5>
+                            <span>Content Creator</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Best value for money in the high-end gaming laptop segment. The build quality is premium and the performance is unmatched at this price point."</p>
+                    <div class="testimonial-author">
+                        <img src="images/testimonials/avatar3.jpg" alt="Alex Kim" class="author-avatar">
+                        <div class="author-info">
+                            <h5>Alex Kim</h5>
+                            <span>Tech Reviewer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-controls">
+                <button class="control-btn prev" id="prevTestimonial">←</button>
+                <div class="control-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="control-btn next" id="nextTestimonial">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Xbox Section -->
+    <section class="xbox-section" id="xbox">
+        <div class="container">
+            <div class="xbox-content">
+                <img src="images/logo/xbox-game-pass.png" alt="Xbox Game Pass" class="xbox-logo">
+                <h2>Play 200+ games with 2 months of Xbox Game Pass</h2>
+                <p>Claim within 30 days of device activation. New and eligible returning members only. Valid payment method required.</p>
+                <a href="#" class="btn btn-xbox">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="cta">
+        <div class="cta-particles" id="ctaParticles"></div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Gear Up and Game</h2>
+                <p class="cta-subtitle">Upgrade your Strix G17 with a complete gaming bundle. Travel with confidence with the ROG backpack and Impact mouse.</p>
+                <div class="cta-price">
+                    <span class="price-label">Starting at</span>
+                    <span class="price-value">$1,799</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-large btn-primary">Buy Now</a>
+                    <a href="#" class="btn btn-large btn-secondary">Find Retailer</a>
+                </div>
+                <p class="cta-note">*Bundled peripherals may vary according to regions. Please check with local vendors for exact offers.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="images/logo/rog-logo-white.png" alt="ROG" class="footer-logo">
+                    <p>Republic of Gamers is a brand used by ASUS since 2006, encompassing a range of computer hardware, personal computers, peripherals, and accessories oriented primarily toward PC gaming.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <img src="images/icons/social-facebook.svg" alt="">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <img src="images/icons/social-twitter.svg" alt="">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <img src="images/icons/social-instagram.svg" alt="">
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <img src="images/icons/social-youtube.svg" alt="">
+                        </a>
+                        <a href="#" class="social-link" aria-label="Discord">
+                            <img src="images/icons/social-discord.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Desktops</a></li>
+                        <li><a href="#">Motherboards</a></li>
+                        <li><a href="#">Graphics Cards</a></li>
+                        <li><a href="#">Monitors</a></li>
+                        <li><a href="#">Peripherals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Armoury Crate</a></li>
+                        <li><a href="#">Drivers & Tools</a></li>
+                        <li><a href="#">Warranty Information</a></li>
+                        <li><a href="#">Repair Status</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">ROG Elite Rewards</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Events</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2023 ASUS ROG. All rights reserved. | Republic of Gamers</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24"><path d="M7 14l5-5 5 5z"/></svg>
+    </button>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/canvas.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
